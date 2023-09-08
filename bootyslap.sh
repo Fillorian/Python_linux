@@ -1,13 +1,23 @@
 #!/usr/bin/bash
 
-echo "Spank that in 10...";
+count=10
 
-i=1;
+echo "Wan'er jiji $i ..."
 
-while true;
-    print(i);
-    if i < 0;
-        break;
-    sleep 1;
-    i -= 1;
+sleep 1
+
+while [ $count -ge 5 ];
+    do 
+    echo "$count"
+    count=$((count - 1))
+    sleep 1
     done
+
+while [ $count -ge 0 ];
+    do 
+    echo "$count"
+    count=$((count - 1))
+    sleep 0.25
+    done
+
+echo "too slow"
